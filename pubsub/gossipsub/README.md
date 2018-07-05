@@ -39,7 +39,7 @@ It proposes a topic pubsub protocol based on the following papers:
 2. HyParView: a membership protocol for reliable gossip-based broadcast, 2007 ([PDF](http://asc.di.fct.unl.pt/~jleitao/pdf/dsn07-leitao.pdf), DOI: [10.1109/DSN.2007.56](http://doi.org/10.1109/DSN.2007.56))
 3. GoCast: Gossip-enhanced Overlay Multicast for Fast and Dependable Group Communication, 2005 ([PDF](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.75.4811&rep=rep1&type=pdf))
 
-The protocol implements the Plumtree algorithm from [1], with
+The protocol implements the Plumtree algorithm from [1], with 
 membership managed using HyParView[2] and proximity-aware overlay
 construction based on the scheme proposed in GoCast[3]. The marrying
 of proximity awareness from GoCast with Plumtree was suggested by
@@ -69,8 +69,8 @@ pull missing messages.  Initially, all peers in the active list are
 eager forming a connected mesh.  As messages propagate, peers _prune_
 eager links when receiving duplicate messages, thus constructing a
 multicast tree. The tree is repaired when peers receive lazy messages
-that were not propagated via eager links by _grafting_ an eagler link
-on top of a lazy one.
+that were not propagated via eager links by _grafting_ an eagerer <!--See https://en.wiktionary.org/wiki/eager FMI-->
+link on top of a lazy one.
 
 In steady state, the protocol optimizes the multicast tree in two
 ways. Whenever a message is received via both an eager link and a
