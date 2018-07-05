@@ -69,8 +69,9 @@ pull missing messages.  Initially, all peers in the active list are
 eager forming a connected mesh.  As messages propagate, peers _prune_
 eager links when receiving duplicate messages, thus constructing a
 multicast tree. The tree is repaired when peers receive lazy messages
-that were not propagated via eager links by _grafting_ an eagler link
-on top of a lazy one.
+that were not propagated via eager links by _grafting_ an eagerer
+<!--See https://en.wiktionary.org/wiki/eager FMI--> link on top of a
+lazy one.
 
 In steady state, the protocol optimizes the multicast tree in two
 ways. Whenever a message is received via both an eager link and a
